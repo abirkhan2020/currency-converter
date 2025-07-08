@@ -54,7 +54,7 @@ A modern, responsive currency converter built with HTML, Tailwind CSS, and JavaS
 ### **Technologies Used**
 - **HTML5**: Semantic markup with modern structure
 - **Tailwind CSS**: Utility-first CSS framework via CDN with custom animations
-- **JavaScript ES6+**: Async/await, DOM manipulation, fetch API, modern ES6+ features
+- **TypeScript**: Type-safe JavaScript for robust code
 - **Font Awesome**: Icon library via CDN for beautiful UI icons
 - **Exchange Rate API**: Real-time currency exchange rate data
 - **Google Fonts**: Inter font family for modern typography
@@ -73,20 +73,16 @@ A modern, responsive currency converter built with HTML, Tailwind CSS, and JavaS
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/currency-converter.git
+   git clone https://github.com/pvm-harshavardhan/currency-converter.git
    ```
-
 2. **Change to the project directory:**
    ```bash
    cd currency-converter
    ```
-
 3. **Update the API key:**
-   - Open `script.js` and replace the placeholder API key with your own from [ExchangeRate-API](https://www.exchangerate-api.com/).
-
+   - Open `script.ts` and replace the placeholder API key with your own from [ExchangeRate-API](https://www.exchangerate-api.com/).
 4. **Open the app:**
    - Open `index.html` in your web browser.
-
 5. **Start converting currencies!** 💱
 
 _No build step or server required!_
@@ -96,7 +92,8 @@ _No build step or server required!_
 ```
 currency-converter/
 ├── 📄 index.html     # Main HTML file with Tailwind CDN and custom config
-├── ⚡ script.js      # JavaScript logic for currency conversion and API calls
+├── ⚡ script.ts      # TypeScript logic for currency conversion and API calls
+├── ⚡ script.js      # Compiled JavaScript output
 ├── 🎨 style.css      # Custom CSS styles and animations
 ├── 🖼️ favLogo.png    # App favicon and logo
 └── 📖 README.md      # Project documentation
@@ -106,13 +103,13 @@ currency-converter/
 
 The app uses the **Exchange Rate API** for real-time currency data:
 
-- **API Key**: Configured in `script.js` (top of file)
+- **API Key**: Configured in `script.ts` (top of file)
 - **Base URL**: `https://v6.exchangerate-api.com/v6`
 - **Rate Limits**: Check Exchange Rate API documentation for current limits
 - **Free Tier**: Available for basic usage
 
 **🔄 Want to use a different quote API provider?**  
-You can easily switch to another API by updating the endpoint and API key in `app.js`.  
+You can easily switch to another API by updating the endpoint and API key in `script.ts`.  
 Just make sure the new API returns a quote and author in its response, and adjust the code if the response format is different.
 
 
@@ -148,7 +145,7 @@ Just make sure the new API returns a quote and author in its response, and adjus
 
 - Add screenshots or GIFs to highlight features and UI
 - Update colors and styles in Tailwind config or HTML classes
-- Modify the `currencies` array in `script.js` to add/remove currencies
+- Modify the `currencies` array in `script.ts` to add/remove currencies
 
 ---
 
@@ -185,7 +182,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 📞 Contact
 
 Your Name - [@pvm_harsha](https://x.com/pvm_harsha)  
-Project Link: [Currency Converter Web Project](https://github.com/yourusername/currency-converter)
+Project Link: [Currency Converter Web Project](https://github.com/pvm-harshavardhan/currency-converter)
 
 ---
 
